@@ -6,12 +6,9 @@ Contents
 
 - `datasets/` - sample CSV files (gold.dim_customers.csv, gold.dim_products.csv, gold.fact_sales.csv)
 
-- `scripts/` - useful SQL scripts:
+- `script/` - useful SQL scripts:
   - `initialize_database.sql` — creates the `DataWarehouseAnalytics` database, `gold` schema, tables, and bulk-loads data from CSV files (this will DROP the database if it exists)
-  - `database_exploration.sql` — lists tables and columns
-  - `date_exploration.sql` — date range and age queries
-  - `dimentsions_exploration.sql` — (typo: "dimentions") explore dimension tables
-  - `magnitute_analysis.sql` — aggregation and revenue queries
-  - `measures_exploration.sql` — measures and summary report
-  - `ranking_analysis.sql` — top/bottom ranking queries
+  - `change_over_time.sql` — monthly sales trends (totals, orders, average, items)
+  - `cumulative_analysis.sql` — cumulative sales by month/year; yearly moving average
+  - `performance_analysis.sql` — product performance vs average and previous year
 
